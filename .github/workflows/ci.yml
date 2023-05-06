@@ -52,9 +52,7 @@ jobs:
         tar -xf panda3d-1.10.14-tools-mac.tar.gz
         mv panda3d-1.10.14/thirdparty thirdparty
         rmdir panda3d-1.10.14
-
-        # Temporary hack so that pzip can run, since we are about to remove Cg anyway.
-        install_name_tool -id "$(pwd)/thirdparty/darwin-libs-a/nvidiacg/lib/libCg.dylib" thirdparty/darwin-libs-a/nvidiacg/lib/libCg.dylib
+        rm -rf thirdparty/darwin-libs-a/nvidiacg
 
         brew install ccache
 
