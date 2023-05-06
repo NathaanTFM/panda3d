@@ -16,7 +16,7 @@ jobs:
 
         include:
         - profile: macos-eigen-coverage-unity-xcode
-          os: macOS-13
+          os: macOS-11
           config: Coverage
           unity: YES
           generator: Xcode
@@ -26,7 +26,7 @@ jobs:
           eigen: YES
 
         - profile: macos-nometa-standard-makefile
-          os: macOS-13
+          os: macOS-11
           config: Standard
           unity: NO
           generator: Unix Makefiles
